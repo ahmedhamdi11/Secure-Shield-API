@@ -2,8 +2,7 @@ from keras.models import load_model
 from flask_restful import Resource, reqparse
 from werkzeug.datastructures import FileStorage
 import pandas as pd
-import numpy as np
-from sklearn.preprocessing import LabelEncoder, MinMaxScaler
+from sklearn.preprocessing import LabelEncoder
 
 # load the h5 model
 attackDetectionModel = load_model('ai_models/cnn-lstm_attack_detection_model.h5')
