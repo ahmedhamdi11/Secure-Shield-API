@@ -1,4 +1,4 @@
-from keras.preprocessing.sequence import pad_sequences
+from keras_preprocessing.sequence import pad_sequences
 import pickle
 from keras.models import load_model
 
