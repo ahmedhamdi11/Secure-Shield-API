@@ -7,7 +7,7 @@ from flask_restful import Resource, reqparse
 # load the h5 model
 gruPhishingEmailsModel = load_model('ai_models/gru_phishing_emails_model.h5')
 
-# argments
+# arguments
 post_args = reqparse.RequestParser()
 post_args.add_argument('email', type =str, help='email is required', required=True)
 
@@ -24,7 +24,7 @@ def preprocessEmail(email):
 
     return email_sequences_matrix
 
-class PhisingEmailDetection(Resource):
+class PhishingEmailDetection(Resource):
     def post(self):
         args =post_args.parse_args()
 

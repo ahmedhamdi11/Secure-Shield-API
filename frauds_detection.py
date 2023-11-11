@@ -10,7 +10,7 @@ rob_scaler = RobustScaler()
 # load the h5 model
 fraudDetectionModel = load_model('ai_models/gru_fraud_detection_model.h5')
 
-# argments
+# arguments
 post_args = reqparse.RequestParser()
 post_args.add_argument('file',
                         type =FileStorage,

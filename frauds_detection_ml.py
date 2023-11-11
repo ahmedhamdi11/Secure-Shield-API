@@ -11,7 +11,7 @@ rob_scaler = RobustScaler()
 # load the h5 model
 fraudDetectionModel = joblib.load('ai_models/xgboost_model.pkl')
 
-# argments
+# arguments
 post_args = reqparse.RequestParser()
 post_args.add_argument('file',
                         type =FileStorage,

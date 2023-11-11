@@ -1,4 +1,4 @@
-from phishing_email_detection import PhisingEmailDetection
+from phishing_email_detection import PhishingEmailDetection
 from frauds_detection import FraudsDetection
 from attack_detection import AttackDetection
 from malware_detection import MalwareDetection
@@ -14,7 +14,7 @@ api =Api(app)
 api.add_resource(FraudsDetection,'/frauds_detection')
 api.add_resource(AttackDetection,'/attack_detection')
 api.add_resource(MalwareDetection,'/malware_detection')
-api.add_resource(PhisingEmailDetection,'/phising_email_detection')
+api.add_resource(PhishingEmailDetection,'/phishing_email_detection')
 api.add_resource(AttackDetectionML,'/attack_detection_ml')
 api.add_resource(FraudsDetectionMl,'/frauds_detection_ml')
 

@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 # load the h5 model
 attackDetectionModel = load_model('ai_models/cnn-lstm_attack_detection_model.h5')
 
-# argments
+# arguments
 post_args = reqparse.RequestParser()
 post_args.add_argument('file',
                         type =FileStorage,

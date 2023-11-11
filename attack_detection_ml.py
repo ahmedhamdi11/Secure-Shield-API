@@ -7,7 +7,7 @@ import joblib
 # load the h5 model
 model = joblib.load('ai_models/knn_model.pkl')
 
-# argments
+# arguments
 post_args = reqparse.RequestParser()
 post_args.add_argument('file',
                         type =FileStorage,
