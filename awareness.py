@@ -1,5 +1,5 @@
-from flask import Flask
 from flask_restful import Resource
+
 class Awareness(Resource):
     def get(self):
         return {'data':[
