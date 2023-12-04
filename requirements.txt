@@ -1,0 +1,12 @@
+gunicorn
+scikit-learn
+flask
+flask-RESTful
+pandas
+numpy
+werkzeug
+keras
+tensorflow
+keras_preprocessing
+xgboost
+joblib
