@@ -1,9 +1,10 @@
-### Secure Shield API
+
+# Secure Shield API
 Welcome to the Secure Shield API documentation. The Secure Shield API is a robust interface designed to empower applications with advanced cybersecurity features, including the detection of malware, phishing emails, frauds, and attack detection.
 Additionally, it serves as a knowledge resource, offering articles on cybersecurity and user protection strategies. 
 
 
-### API Endpoints Overview
+## API Endpoints Overview
 The Secure Shield API comprises four main endpoints, each tailored to a specific aspect of cybersecurity:
 - Attack Detection Endpoint
 - Fraud Card Detection Endpoint
@@ -14,7 +15,7 @@ The Secure Shield API comprises four main endpoints, each tailored to a specific
 
 ## Below is a detailed description of each endpoint
 
-# 1. Attack Detection Endpoint
+### 1. Attack Detection Endpoint
 - Description: Utilizes a Convolutional Neural Network (CNN) AI model to identify and classify network attacks.
 
 - Model Output Classes: 'Dos Attack', 'Probe Attack', 'Privilege Attack', 'Access Attack', 'Normal'.
@@ -30,7 +31,7 @@ The Secure Shield API comprises four main endpoints, each tailored to a specific
 }
 
 
-# 2. Fraud Card Detection Endpoint
+### 2. Fraud Card Detection Endpoint
 - Description: Employs a Gated Recurrent Unit (GRU) model to detect fraudulent card activity and returns a prediction along with the model's confidence.
 
 - Request Endpoint: POST /frauds_detection
@@ -43,7 +44,7 @@ The Secure Shield API comprises four main endpoints, each tailored to a specific
     }
 }
 
-# 3. Malware Detection Endpoint
+### 3. Malware Detection Endpoint
 - Description: Uses a Convolutional Neural Network (CNN) for the detection of malware in submitted files.
 
 - Request Endpoint: POST /malware_detection
@@ -56,7 +57,7 @@ The Secure Shield API comprises four main endpoints, each tailored to a specific
     }
 }
 
-# 4. Phishing Email Detection Endpoint
+### 4. Phishing Email Detection Endpoint
 - Description: Utilizes a Gated Recurrent Unit (GRU) model to distinguish between phishing and safe emails.
 
 - Request Endpoint: POST /phishing_email_detection
@@ -86,5 +87,11 @@ Besides the primary security functionality, the Secure Shield API also provides 
         'image':'<related_article_image_url>',
       },
     ]
+
 }
+
+
+## Base URL
+The API hase been hosted on Microsoft Azure.
+And the base URL for accessing the Secure Shield API is: https://glory-team.azurewebsites.net
 
