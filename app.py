@@ -17,8 +17,8 @@ api.add_resource(Awareness,'/awareness')
 api.add_resource(AttackDetection,'/attack_detection')
 api.add_resource(MalwareDetection,'/malware_detection')
 api.add_resource(PhishingEmailDetection,'/phishing_email_detection')
-api.add_resource(AttackDetectionML,'/attack_detection_ml')
-api.add_resource(FraudsDetectionMl,'/frauds_detection_ml')
+# api.add_resource(AttackDetectionML,'/attack_detection_ml')
+# api.add_resource(FraudsDetectionMl,'/frauds_detection_ml')
 
 
 if __name__ =='__main__':
