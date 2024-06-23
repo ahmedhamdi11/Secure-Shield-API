@@ -6,7 +6,7 @@ pandas
 numpy
 werkzeug
 keras
-tensorflow
+tensorflow==2.12.0
 keras_preprocessing
 xgboost
 joblib
